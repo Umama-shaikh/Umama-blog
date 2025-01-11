@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Blogcard from "./componets/blogcard";
 import { client } from "@/sanity/lib/client";
 import { Blog } from "@/sanity/schemaTypes/blog";

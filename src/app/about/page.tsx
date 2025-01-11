@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -16,9 +17,11 @@ export default function AboutPage() {
       {/* Content Section */}
       <section className="text-lg leading-normal mt-4 space-y-6 px-2 lg:px-10 py-5 lg:text-center font-normal text-slate-800 lg:w-[1000px] lg:mx-auto bg-white shadow-md rounded-lg">
         <div className="flex flex-col items-center">
-          <img
+        <Image
             src="/images/hero-image.png"
             alt="About Us"
+            width={500}
+            height={300}
             className="w-full max-w-md rounded-md shadow-md mb-6"
           />
         </div>
@@ -32,7 +35,7 @@ export default function AboutPage() {
 
         <h2 className="text-2xl font-bold text-slate-800">About the Author</h2>
         <p>
-          Hi, I'm Umama, the creator of this blog. With over 1 years
+          Hi, I&apos;m Umama, the creator of this blog. With over 1 years
           of experience in the tech industry, I aim to share my knowledge and
           insights with fellow developers. I believe in continuous learning and
           strive to keep up with the latest trends and technologies.
@@ -41,7 +44,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold text-slate-800">Contact Us</h2>
         <p>
           If you have any questions, suggestions, or feedback, feel free to
-          reach out to us at <span className="underline text-blue-600 cursor-pointer">email@example.com</span>. We'd love to hear from you!
+          reach out to us at <span className="underline text-blue-600 cursor-pointer">email@example.com</span>. We&apos;d love to hear from you!
         </p>
       </section>
 
@@ -50,18 +53,22 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold text-slate-800">Meet the Team</h2>
         <div className="flex flex-wrap justify-center gap-8">
           <div className="w-full max-w-xs text-center">
-            <img
+          <Image
               src="/images/media (1).jpg"
               alt="Team Member 1"
+              width={150}
+              height={150}
               className="w-full rounded-full shadow-md mb-4"
             />
             <h3 className="text-xl font-bold text-slate-800">Team Member 1</h3>
             <p className="text-base text-slate-600">Role/Position</p>
           </div>
           <div className="w-full max-w-xs text-center">
-            <img
+          <Image
               src="/images/media (2).jpg"
               alt="Team Member 2"
+              width={150}
+              height={150}
               className="w-full rounded-full shadow-md mb-4"
             />
             <h3 className="text-xl font-bold text-slate-800">Team Member 2</h3>
